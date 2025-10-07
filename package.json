@@ -1,0 +1,17 @@
+{
+  "name": "mainsalesportal",
+  "version": "1.0.0",
+  "description": "An ecommerce sales portal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["ecommerce", "sales", "portal"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2"
+  }
+}
