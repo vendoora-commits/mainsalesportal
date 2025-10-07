@@ -1,0 +1,82 @@
+{
+  "navigation": {
+    "home": "Home",
+    "products": "Products",
+    "solutions": "Solutions",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "dashboard": "Dashboard",
+    "admin": "Admin"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "update": "Update",
+    "next": "Next",
+    "previous": "Previous",
+    "continue": "Continue",
+    "back": "Back",
+    "submit": "Submit",
+    "close": "Close"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "forgotPassword": "Forgot Password?",
+    "resetPassword": "Reset Password",
+    "createAccount": "Create Account",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?"
+  },
+  "property": {
+    "title": "Property Setup",
+    "description": "Configure your hotel property for smart experience",
+    "name": "Property Name",
+    "type": "Property Type",
+    "rooms": "Number of Rooms",
+    "floors": "Number of Floors",
+    "location": "Location",
+    "address": "Address",
+    "phone": "Phone Number",
+    "email": "Property Email"
+  },
+  "kiosk": {
+    "title": "Kiosk Selection",
+    "description": "Choose the right kiosk solutions for your property",
+    "passportScanner": "Passport Scanner",
+    "printer": "Printer",
+    "keyDispenser": "Key Dispenser",
+    "paymentTerminal": "Payment Terminal",
+    "selfCheckIn": "Self Check-in"
+  },
+  "smartLock": {
+    "title": "Smart Lock Configuration",
+    "description": "Configure smart locks for your property",
+    "battery": "Battery Powered",
+    "wired": "Wired",
+    "mobileAccess": "Mobile Access",
+    "fingerprint": "Fingerprint",
+    "keycard": "Key Card",
+    "bluetooth": "Bluetooth"
+  },
+  "roomFeatures": {
+    "title": "Smart Room Features",
+    "description": "Configure smart room automation",
+    "switches": "Smart Switches",
+    "motionSensors": "Motion Sensors",
+    "blinds": "Smart Blinds",
+    "thermostat": "Smart Thermostat",
+    "lighting": "Smart Lighting",
+    "tv": "Smart TV Control"
+  }
+}

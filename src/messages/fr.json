@@ -1,0 +1,37 @@
+{
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "submit": "Soumettre",
+    "close": "Fermer"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "setup": "Configuration",
+    "kiosk": "Sélection de Kiosque",
+    "locks": "Serrures Intelligentes",
+    "features": "Fonctionnalités",
+    "admin": "Administration"
+  },
+  "home": {
+    "title": "Transformez Votre Propriété avec la Technologie Intelligente",
+    "subtitle": "Que vous exploitiez un hôtel, Airbnb, VRBO ou une propriété en temps partagé, personnalisez votre hébergement avec des kiosques intelligents, des serrures connectées et des fonctionnalités automatisées",
+    "startConfiguration": "Démarrer la Configuration",
+    "learnMore": "En Savoir Plus",
+    "completeSolutions": "Solutions Complètes pour Propriétés Intelligentes",
+    "solutionsDescription": "Tout ce dont vous avez besoin pour moderniser votre hôtel, Airbnb, VRBO ou propriété en temps partagé"
+  },
+  "wizard": {
+    "propertySetup": "Configuration de la Propriété",
+    "kioskSelection": "Sélection de Kiosque",
+    "lockConfiguration": "Configuration des Serrures",
+    "roomFeatures": "Fonctionnalités de Chambre",
+    "summary": "Résumé"
+  }
+}
+

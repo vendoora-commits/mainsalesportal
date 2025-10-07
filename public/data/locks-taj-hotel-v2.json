@@ -1,0 +1,228 @@
+{
+  "source": "Trinity-TAJ Hotel Lock & API",
+  "vendor": "taj",
+  "region": "global",
+  "families": [
+    {
+      "id": "TAJ-L-series",
+      "sku": "TAJ-L",
+      "category": "lock",
+      "name": {
+        "en-US": "TAJ L-Series Hotel Lock",
+        "zh-CN": "TAJ L系列酒店锁",
+        "es-419": "Cerradura TAJ Serie L para Hoteles",
+        "pt-BR": "Fechadura TAJ Série L para Hotéis",
+        "de-DE": "TAJ L-Serie Hotelschloss",
+        "fr-FR": "Serrure Hôtelière TAJ Série L",
+        "ar": "قفل TAJ سلسلة L للفنادق"
+      },
+      "short": {
+        "en-US": "Slim hotel lock with mechanical backup and PMS integration",
+        "zh-CN": "纤薄酒店锁，带机械备份和 PMS 集成",
+        "es-419": "Cerradura delgada con respaldo mecánico e integración PMS",
+        "pt-BR": "Fechadura slim com backup mecânico e integração PMS",
+        "de-DE": "Schlankes Hotelschloss mit mechanischer Sicherung und PMS-Integration",
+        "fr-FR": "Serrure mince avec secours mécanique et intégration PMS",
+        "ar": "قفل فندقي نحيف مع نسخة احتياطية ميكانيكية وتكامل PMS"
+      },
+      "audience": ["hotel", "resort", "casino", "motel"],
+      "protocols": ["zigbee", "ble", "nfc"],
+      "power": ["battery", "wired"],
+      "authMethods": ["card", "mobile", "pin", "fp"],
+      "features": ["mechanical-backup", "pms-integration", "offline-capable", "audit-trail"],
+      "regions": ["us", "eu", "latam", "afr", "gcc", "apac"],
+      "certifications": ["FCC", "CE", "UL", "UKCA", "INMETRO", "SABS", "NOM", "CCC"],
+      "electrical": {
+        "voltage": "battery",
+        "freq": "",
+        "socket": ""
+      },
+      "integration": {
+        "apps": ["TTLock", "Tuya"],
+        "pms": ["opera", "protel", "fidelio", "maestro"],
+        "api": "trinity-taj-hotel-api"
+      },
+      "requirements": [
+        {
+          "en-US": "Zigbee gateway recommended for multi-floor deployments",
+          "zh-CN": "多楼层部署建议使用 Zigbee 网关",
+          "es-419": "Se recomienda puerta de enlace Zigbee para implementaciones multi-piso",
+          "pt-BR": "Gateway Zigbee recomendado para implementações multi-andar"
+        }
+      ],
+      "images": {
+        "default": ["/vendoora-assets/images_4k/locks/lock_slim_silver.png"],
+        "finishes": {
+          "silver": "/vendoora-assets/images_4k/locks/lock_slim_silver.png",
+          "black": "/vendoora-assets/images_4k/locks/lock_slim_black.png",
+          "gold": "/vendoora-assets/images_4k/locks/lock_slim_gold.png"
+        },
+        "alt": {
+          "en-US": "Slim hotel smart lock in silver finish, battery-powered, Zigbee + BLE + NFC",
+          "zh-CN": "银色纤薄智能酒店锁，电池供电，支持 Zigbee + BLE + NFC",
+          "es-419": "Cerradura inteligente delgada acabado plateado, a batería, Zigbee + BLE + NFC",
+          "pt-BR": "Fechadura inteligente slim acabamento prata, bateria, Zigbee + BLE + NFC",
+          "de-DE": "Schlankes Smart-Hotel-Schloss in Silber, batteriebetrieben, Zigbee + BLE + NFC",
+          "fr-FR": "Serrure intelligente mince finition argentée, sur batterie, Zigbee + BLE + NFC",
+          "ar": "قفل فندقي ذكي نحيف بتشطيب فضي، يعمل بالبطارية، Zigbee + BLE + NFC"
+        }
+      },
+      "availability": {
+        "status": "available",
+        "leadTimeDays": 30
+      },
+      "price": 189.99,
+      "compatibility": {
+        "kiosks": ["estar-desktop-19", "estar-stand-32", "estar-wall-21"],
+        "networks": ["ruckus-iot", "tuya", "smartthings"]
+      }
+    },
+    {
+      "id": "TAJ-KL-series",
+      "sku": "TAJ-KL",
+      "category": "lock",
+      "name": {
+        "en-US": "TAJ KL-Series Smart Lock with Camera",
+        "zh-CN": "TAJ KL系列带摄像头的智能锁",
+        "es-419": "Cerradura Inteligente TAJ Serie KL con Cámara",
+        "pt-BR": "Fechadura Inteligente TAJ Série KL com Câmera",
+        "de-DE": "TAJ KL-Serie Smart Lock mit Kamera",
+        "fr-FR": "Serrure Intelligente TAJ Série KL avec Caméra",
+        "ar": "قفل TAJ الذكي سلسلة KL مع كاميرا"
+      },
+      "short": {
+        "en-US": "Advanced lock with face recognition, video intercom, and camera",
+        "zh-CN": "具有人脸识别、视频对讲和摄像头的高级锁",
+        "es-419": "Cerradura avanzada con reconocimiento facial, videoportero y cámara"
+      },
+      "audience": ["hotel", "resort", "casino", "motel", "timeshare", "airbnb", "vrbo"],
+      "protocols": ["zigbee", "ble", "wifi"],
+      "power": ["battery"],
+      "authMethods": ["card", "mobile", "pin", "fp", "face"],
+      "features": ["camera", "video-intercom", "face-recognition", "mobile-wallet", "remote-unlock", "guest-codes", "audit-trail"],
+      "regions": ["us", "eu", "latam", "afr", "gcc", "apac"],
+      "certifications": ["FCC", "CE", "UL", "INMETRO", "SABS", "NOM", "CCC", "SASO"],
+      "electrical": {
+        "voltage": "battery",
+        "freq": "",
+        "socket": ""
+      },
+      "integration": {
+        "apps": ["TTLock", "Tuya"],
+        "pms": ["opera", "protel", "fidelio", "maestro"],
+        "api": "trinity-taj-hotel-api"
+      },
+      "requirements": [
+        {
+          "en-US": "Wi-Fi or Zigbee gateway for video intercom; cloud storage for recordings",
+          "zh-CN": "视频对讲需要 Wi-Fi 或 Zigbee 网关；云存储用于录像"
+        }
+      ],
+      "images": {
+        "default": ["/vendoora-assets/images_4k/locks/lock_kl_silver.png"],
+        "finishes": {
+          "silver": "/vendoora-assets/images_4k/locks/lock_kl_silver.png",
+          "black": "/vendoora-assets/images_4k/locks/lock_kl_black.png"
+        },
+        "alt": {
+          "en-US": "TAJ KL-series smart lock with integrated camera in silver finish",
+          "zh-CN": "TAJ KL 系列集成摄像头的银色智能锁"
+        }
+      },
+      "availability": {
+        "status": "available",
+        "leadTimeDays": 45
+      },
+      "price": 299.99,
+      "compatibility": {
+        "kiosks": ["estar-desktop-19", "estar-stand-32", "estar-wall-21"],
+        "networks": ["ruckus-iot", "tuya", "smartthings"]
+      }
+    },
+    {
+      "id": "TAJ-S-series",
+      "sku": "TAJ-S",
+      "category": "lock",
+      "name": {
+        "en-US": "TAJ S-Series Slimline Lock",
+        "zh-CN": "TAJ S系列超薄锁",
+        "es-419": "Cerradura Delgada TAJ Serie S",
+        "pt-BR": "Fechadura Slim TAJ Série S"
+      },
+      "short": {
+        "en-US": "Optimized for short-term rentals with mobile wallet keys",
+        "zh-CN": "为短期租赁优化，支持移动钱包密钥"
+      },
+      "audience": ["airbnb", "vrbo", "timeshare", "serviced-apartment", "vacation_rental"],
+      "protocols": ["ble", "wifi"],
+      "power": ["battery"],
+      "authMethods": ["mobile", "pin", "card"],
+      "features": ["wallet-keys", "remote-unlock", "temp-codes", "auto-lock", "guest-codes"],
+      "regions": ["us", "eu", "latam", "apac"],
+      "certifications": ["FCC", "CE", "UL", "INMETRO"],
+      "electrical": {
+        "voltage": "battery",
+        "freq": "",
+        "socket": ""
+      },
+      "integration": {
+        "apps": ["TTLock", "Tuya"],
+        "api": "trinity-taj-smart-2025"
+      },
+      "requirements": [
+        {
+          "en-US": "Mobile app (TTLock or Tuya) required for guest code management",
+          "zh-CN": "需要移动应用程序（TTLock 或 Tuya）进行访客代码管理"
+        }
+      ],
+      "images": {
+        "default": ["/vendoora-assets/images_4k/locks/lock_s_series_silver.png"],
+        "finishes": {
+          "silver": "/vendoora-assets/images_4k/locks/lock_s_series_silver.png",
+          "black": "/vendoora-assets/images_4k/locks/lock_s_series_black.png"
+        },
+        "alt": {
+          "en-US": "TAJ S-series slimline smart lock for vacation rentals in silver",
+          "zh-CN": "TAJ S 系列超薄智能锁，用于度假租赁，银色"
+        }
+      },
+      "availability": {
+        "status": "available",
+        "leadTimeDays": 30
+      },
+      "price": 149.99,
+      "compatibility": {
+        "networks": ["tuya", "smartthings"]
+      }
+    }
+  ],
+  "compatibility": {
+    "kiosk_key_dispense": {
+      "compatible_locks": ["TAJ-L-series", "TAJ-KL-series"],
+      "requires": ["rfid-card-encoder"],
+      "notes": {
+        "en-US": "Can encode and dispense RFID cards at check-in",
+        "zh-CN": "可在入住时编码和分发 RFID 卡"
+      }
+    },
+    "kiosk_qr_printing": {
+      "compatible_locks": ["TAJ-KL-series", "TAJ-S-series"],
+      "requires": ["mobile-auth-enabled"],
+      "notes": {
+        "en-US": "Can print QR codes or issue wallet passes for mobile access",
+        "zh-CN": "可打印二维码或发行钱包通行证以进行移动访问"
+      }
+    }
+  },
+  "property_type_recommendations": {
+    "hotel": ["TAJ-L-series", "TAJ-KL-series"],
+    "resort": ["TAJ-L-series", "TAJ-KL-series"],
+    "casino": ["TAJ-L-series", "TAJ-KL-series"],
+    "motel": ["TAJ-L-series"],
+    "airbnb": ["TAJ-S-series", "TAJ-KL-series"],
+    "vrbo": ["TAJ-S-series", "TAJ-KL-series"],
+    "timeshare": ["TAJ-KL-series", "TAJ-S-series"],
+    "vacation_rental": ["TAJ-S-series", "TAJ-KL-series"]
+  }
+}
+

@@ -1,0 +1,226 @@
+/**
+ * Vendoora Interactive Kiosk Render System
+ * Dual-finish (White + Black) hover/tap cross-fade animation
+ * 
+ * Usage:
+ * <div class="kiosk-wrap">
+ *   <img src="/path/to/kiosk_white.png" alt="..." class="kiosk-img white active">
+ *   <img src="/path/to/kiosk_black.png" alt="..." class="kiosk-img black">
+ * </div>
+ */
+
+.kiosk-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 480px; /* Adjust based on your design needs */
+  margin: 0 auto;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.kiosk-img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  will-change: opacity;
+  pointer-events: none;
+}
+
+.kiosk-img.active {
+  opacity: 1;
+}
+
+/* Keep the first image in document flow to maintain container height */
+.kiosk-img:first-child {
+  position: relative;
+}
+
+/* Desktop: Hover to swap finishes (white → black) */
+@media (hover: hover) and (pointer: fine) {
+  .kiosk-wrap:hover .kiosk-img.white {
+    opacity: 0;
+  }
+  
+  .kiosk-wrap:hover .kiosk-img.black {
+    opacity: 1;
+  }
+  
+  /* Prevent flickering on hover */
+  .kiosk-wrap:hover .kiosk-img.white.active {
+    opacity: 0;
+  }
+}
+
+/* Touch devices: Simple tap toggle handled by JavaScript */
+/* No hover effects on touch to prevent sticky states */
+@media (hover: none) and (pointer: coarse) {
+  .kiosk-wrap:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+}
+
+/* Responsive sizing */
+@media (max-width: 640px) {
+  .kiosk-wrap {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .kiosk-wrap {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .kiosk-wrap {
+    max-width: 480px;
+  }
+}
+
+/* Product card styling */
+.kiosk-product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.kiosk-product-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.kiosk-product-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.kiosk-product-description {
+  font-size: 0.875rem;
+  color: #6b7280;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.kiosk-finish-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #f3f4f6;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.kiosk-finish-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.kiosk-finish-dot.white {
+  background: #ffffff;
+  border: 2px solid #d1d5db;
+}
+
+.kiosk-finish-dot.black {
+  background: #1f2937;
+  border: 2px solid #1f2937;
+}
+
+/* Hover state for finish indicator */
+@media (hover: hover) and (pointer: fine) {
+  .kiosk-wrap:hover + .kiosk-finish-indicator .kiosk-finish-dot.white {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+  
+  .kiosk-wrap:hover + .kiosk-finish-indicator .kiosk-finish-dot.black {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+/* Grid layout for kiosk catalog */
+.kiosk-catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+@media (min-width: 1024px) {
+  .kiosk-catalog-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Loading skeleton for images */
+.kiosk-img-skeleton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    #e0e0e0 50%,
+    #f0f0f0 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 0.5rem;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Accessibility improvements */
+.kiosk-wrap:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 4px;
+  border-radius: 0.5rem;
+}
+
+.kiosk-wrap[aria-pressed="true"] .kiosk-img.white {
+  opacity: 0;
+}
+
+.kiosk-wrap[aria-pressed="true"] .kiosk-img.black {
+  opacity: 1;
+}
+
+/* Print styles */
+@media print {
+  .kiosk-img.black {
+    opacity: 0 !important;
+  }
+  
+  .kiosk-img.white {
+    opacity: 1 !important;
+  }
+}
+

@@ -1,0 +1,37 @@
+{
+  "common": {
+    "loading": "Laden...",
+    "error": "Fehler",
+    "success": "Erfolg",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "next": "Weiter",
+    "previous": "Zurück",
+    "submit": "Absenden",
+    "close": "Schließen"
+  },
+  "navigation": {
+    "home": "Startseite",
+    "setup": "Einrichtung",
+    "kiosk": "Kiosk-Auswahl",
+    "locks": "Smart Locks",
+    "features": "Raumfunktionen",
+    "admin": "Verwaltung"
+  },
+  "home": {
+    "title": "Verwandeln Sie Ihre Immobilie mit Smart-Technologie",
+    "subtitle": "Ob Hotel, Airbnb, VRBO oder Timeshare - konfigurieren Sie Ihre Unterkunft mit intelligenten Kiosken, Smart Locks und automatisierten Funktionen",
+    "startConfiguration": "Konfiguration starten",
+    "learnMore": "Mehr erfahren",
+    "completeSolutions": "Komplettlösungen für Smart Properties",
+    "solutionsDescription": "Alles, was Sie brauchen, um Ihr Hotel, Airbnb, VRBO oder Timeshare zu modernisieren"
+  },
+  "wizard": {
+    "propertySetup": "Immobilien-Einrichtung",
+    "kioskSelection": "Kiosk-Auswahl",
+    "lockConfiguration": "Lock-Konfiguration",
+    "roomFeatures": "Raumfunktionen",
+    "summary": "Zusammenfassung"
+  }
+}
+

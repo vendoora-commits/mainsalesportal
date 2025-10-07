@@ -1,0 +1,29 @@
+{
+  "name": "Vendoora Smart Hotel Platform",
+  "short_name": "Vendoora",
+  "description": "Transform your property with intelligent kiosks, smart locks, and automation",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/vendoora-assets/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/vendoora-assets/logos/vendoora-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "hospitality"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "scope": "/",
+  "screenshots": []
+}
+

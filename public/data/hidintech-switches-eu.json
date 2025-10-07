@@ -1,0 +1,77 @@
+{
+  "source": "HidinTech Smart Switch Supplier - EU Catalog",
+  "region": "eu",
+  "certifications": ["CE", "RoHS", "WEEE"],
+  "voltage": "220-240V",
+  "frequency": "50Hz",
+  "categories": [
+    {
+      "id": "smart-switches",
+      "name": "Smart Light Switches",
+      "description": "WiFi/Zigbee enabled switches with voice control compatibility",
+      "products": [
+        {
+          "id": "hs-eu-1g-w",
+          "sku": "HIDIN-EU-1G-WHT",
+          "name": "1-Gang Smart Switch (White)",
+          "gang": 1,
+          "color": "white",
+          "protocol": ["wifi", "zigbee"],
+          "voiceControl": ["alexa", "google", "siri"],
+          "features": ["timer", "schedule", "remote-control", "energy-monitor"],
+          "compatibility": ["ruckus-iot", "tuya", "smartthings"],
+          "price": 27.99,
+          "imageUrl": "/vendoora-assets/images_4k/switches/switch-1g-white-eu.png"
+        },
+        {
+          "id": "hs-eu-2g-w",
+          "sku": "HIDIN-EU-2G-WHT",
+          "name": "2-Gang Smart Switch (White)",
+          "gang": 2,
+          "color": "white",
+          "protocol": ["wifi", "zigbee"],
+          "voiceControl": ["alexa", "google", "siri"],
+          "features": ["timer", "schedule", "remote-control", "energy-monitor"],
+          "compatibility": ["ruckus-iot", "tuya", "smartthings"],
+          "price": 37.99,
+          "imageUrl": "/vendoora-assets/images_4k/switches/switch-2g-white-eu.png"
+        },
+        {
+          "id": "hs-eu-3g-w",
+          "sku": "HIDIN-EU-3G-WHT",
+          "name": "3-Gang Smart Switch (White)",
+          "gang": 3,
+          "color": "white",
+          "protocol": ["wifi", "zigbee"],
+          "voiceControl": ["alexa", "google", "siri"],
+          "features": ["timer", "schedule", "remote-control", "energy-monitor"],
+          "compatibility": ["ruckus-iot", "tuya", "smartthings"],
+          "price": 47.99,
+          "imageUrl": "/vendoora-assets/images_4k/switches/switch-3g-white-eu.png"
+        }
+      ]
+    },
+    {
+      "id": "dimmers",
+      "name": "Smart Dimmers",
+      "description": "Smooth dimming control with preset scenes",
+      "products": [
+        {
+          "id": "hd-eu-1g-w",
+          "sku": "HIDIN-EU-DIM-1G-WHT",
+          "name": "1-Gang Smart Dimmer (White)",
+          "gang": 1,
+          "color": "white",
+          "protocol": ["wifi", "zigbee"],
+          "voiceControl": ["alexa", "google", "siri"],
+          "features": ["dimming", "timer", "schedule", "remote-control", "scenes"],
+          "compatibility": ["ruckus-iot", "tuya", "smartthings"],
+          "dimmingRange": "1-100%",
+          "price": 32.99,
+          "imageUrl": "/vendoora-assets/images_4k/switches/dimmer-1g-white-eu.png"
+        }
+      ]
+    }
+  ]
+}
+

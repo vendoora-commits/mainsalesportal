@@ -1,0 +1,98 @@
+{
+  "source": "Poyal Smart Blinds Catalog",
+  "region": "global",
+  "categories": [
+    {
+      "id": "interior-blinds",
+      "name": "Interior Smart Blinds",
+      "description": "Automated roller blinds for interior windows",
+      "products": [
+        {
+          "id": "pb-int-roller-w",
+          "sku": "POYAL-INT-ROLL-WHT",
+          "name": "Interior Roller Blind (White)",
+          "type": "roller",
+          "color": "white",
+          "motor": "tubular-35mm",
+          "protocol": ["wifi", "zigbee", "rf"],
+          "control": ["app", "voice", "remote", "schedule"],
+          "voiceControl": ["alexa", "google", "siri"],
+          "features": ["quiet-motor", "battery-backup", "light-sensor", "group-control"],
+          "compatibility": ["ruckus-iot", "tuya", "smartthings"],
+          "maxWidth": "3m",
+          "maxHeight": "3m",
+          "fabric": ["blackout", "sunscreen", "sheer"],
+          "price": 189.99,
+          "imageUrl": "/vendoora-assets/images_4k/blinds/roller-interior-white.png"
+        },
+        {
+          "id": "pb-int-roller-b",
+          "sku": "POYAL-INT-ROLL-BLK",
+          "name": "Interior Roller Blind (Black)",
+          "type": "roller",
+          "color": "black",
+          "motor": "tubular-35mm",
+          "protocol": ["wifi", "zigbee", "rf"],
+          "control": ["app", "voice", "remote", "schedule"],
+          "voiceControl": ["alexa", "google", "siri"],
+          "features": ["quiet-motor", "battery-backup", "light-sensor", "group-control"],
+          "compatibility": ["ruckus-iot", "tuya", "smartthings"],
+          "maxWidth": "3m",
+          "maxHeight": "3m",
+          "fabric": ["blackout", "sunscreen", "sheer"],
+          "price": 189.99,
+          "imageUrl": "/vendoora-assets/images_4k/blinds/roller-interior-black.png"
+        }
+      ]
+    },
+    {
+      "id": "exterior-blinds",
+      "name": "Exterior Smart Blinds",
+      "description": "Weather-resistant automated blinds for outdoor use",
+      "products": [
+        {
+          "id": "pb-ext-roller-w",
+          "sku": "POYAL-EXT-ROLL-WHT",
+          "name": "Exterior Roller Blind (White)",
+          "type": "roller",
+          "color": "white",
+          "motor": "tubular-45mm",
+          "protocol": ["wifi", "zigbee", "rf"],
+          "control": ["app", "voice", "remote", "schedule", "wind-sensor"],
+          "voiceControl": ["alexa", "google", "siri"],
+          "features": ["weather-resistant", "wind-sensor", "sun-sensor", "group-control"],
+          "compatibility": ["ruckus-iot", "tuya", "smartthings"],
+          "maxWidth": "4m",
+          "maxHeight": "3.5m",
+          "fabric": ["outdoor-sunscreen", "waterproof"],
+          "price": 249.99,
+          "imageUrl": "/vendoora-assets/images_4k/blinds/roller-exterior-white.png"
+        }
+      ]
+    },
+    {
+      "id": "curtain-motors",
+      "name": "Smart Curtain Motors",
+      "description": "Automated curtain track motors",
+      "products": [
+        {
+          "id": "pb-curtain-motor",
+          "sku": "POYAL-CURT-MOTOR",
+          "name": "Smart Curtain Motor",
+          "type": "curtain-track",
+          "motor": "track-motor",
+          "protocol": ["wifi", "zigbee", "rf"],
+          "control": ["app", "voice", "remote", "schedule"],
+          "voiceControl": ["alexa", "google", "siri"],
+          "features": ["quiet-operation", "battery-backup", "group-control", "obstacle-detection"],
+          "compatibility": ["ruckus-iot", "tuya", "smartthings"],
+          "maxLoad": "50kg",
+          "maxTrackLength": "6m",
+          "price": 149.99,
+          "imageUrl": "/vendoora-assets/images_4k/blinds/curtain-motor.png"
+        }
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,88 @@
+{
+  "source": "Trinity-TAJ Hotel Lock & API - Kiosk Integration",
+  "models": [
+    {
+      "id": "desktop19",
+      "name": "Desktop 19\" Self Check-In Kiosk",
+      "form_factor": "desktop",
+      "screen_size": "19\"",
+      "features": ["id-scan","receipt","key-dispense","qr","payment"],
+      "os": ["windows","android"],
+      "price": 1200,
+      "dimensions": "18\" W × 14\" D × 22\" H",
+      "weight": "25 lbs",
+      "power": "110-240V AC",
+      "description": "Compact desktop kiosk perfect for reception counters and limited spaces",
+      "image_white": "/vendoora-assets/images_4k/kiosks/kiosk_desktop19_white.png",
+      "image_black": "/vendoora-assets/images_4k/kiosks/kiosk_desktop19_black.png",
+      "capabilities": {
+        "id-scan": "Camera + OCR for passport/ID scanning",
+        "receipt": "Thermal receipt printer",
+        "key-dispense": "RFID card encoder and dispenser",
+        "qr": "QR code printing for mobile keys",
+        "payment": "EMV payment terminal (optional)"
+      }
+    },
+    {
+      "id": "stand32",
+      "name": "Freestanding 32\" Lobby Kiosk",
+      "form_factor": "freestanding",
+      "screen_size": "32\"",
+      "features": ["id-scan","receipt","key-dispense","qr","payment"],
+      "os": ["windows","android"],
+      "price": 2500,
+      "dimensions": "24\" W × 20\" D × 65\" H",
+      "weight": "85 lbs",
+      "power": "110-240V AC",
+      "description": "Premium freestanding kiosk for hotel lobbies and high-traffic areas",
+      "image_white": "/vendoora-assets/images_4k/kiosks/kiosk_freestanding32_white.png",
+      "image_black": "/vendoora-assets/images_4k/kiosks/kiosk_freestanding32_black.png",
+      "capabilities": {
+        "id-scan": "High-resolution camera with passport MRZ reading",
+        "receipt": "High-speed thermal printer",
+        "key-dispense": "Dual RFID card encoder and dispenser",
+        "qr": "High-resolution QR printing",
+        "payment": "EMV + NFC payment terminal"
+      }
+    },
+    {
+      "id": "wall21",
+      "name": "Wall-Mounted 21\" Kiosk",
+      "form_factor": "wall-mounted",
+      "screen_size": "21\"",
+      "features": ["id-scan","receipt","qr"],
+      "os": ["android"],
+      "price": 1800,
+      "dimensions": "20\" W × 4\" D × 28\" H",
+      "weight": "35 lbs",
+      "power": "110-240V AC",
+      "description": "Space-saving wall-mounted kiosk ideal for boutique properties",
+      "image_white": "/vendoora-assets/images_4k/kiosks/kiosk_wall21_white.png",
+      "image_black": "/vendoora-assets/images_4k/kiosks/kiosk_wall21_black.png",
+      "capabilities": {
+        "id-scan": "Integrated camera for ID verification",
+        "receipt": "Thermal printer",
+        "qr": "Mobile key QR code generation"
+      },
+      "notes": "No physical card dispenser - mobile keys only"
+    }
+  ],
+  "kiosk_lock_compatibility": {
+    "desktop19": {
+      "compatible_locks": ["TAJ-L-series", "TAJ-KL-series", "TAJ-S-series"],
+      "optimal_for": ["TAJ-L-series"],
+      "can_issue": ["rfid-card", "mobile-key", "qr-code", "pin-code"]
+    },
+    "stand32": {
+      "compatible_locks": ["TAJ-L-series", "TAJ-KL-series", "TAJ-S-series"],
+      "optimal_for": ["TAJ-L-series", "TAJ-KL-series"],
+      "can_issue": ["rfid-card", "mobile-key", "qr-code", "pin-code", "wallet-pass"]
+    },
+    "wall21": {
+      "compatible_locks": ["TAJ-KL-series", "TAJ-S-series"],
+      "optimal_for": ["TAJ-S-series"],
+      "can_issue": ["mobile-key", "qr-code", "pin-code", "wallet-pass"],
+      "notes": "No card dispenser - mobile keys only"
+    }
+  }
+}

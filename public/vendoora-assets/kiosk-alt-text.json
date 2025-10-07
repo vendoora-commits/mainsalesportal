@@ -1,0 +1,51 @@
+{
+  "kiosk_desktop19_white.png": {
+    "alt_en": "Desktop 19-inch self-check-in kiosk in satin white finish with aluminum accents",
+    "alt_zh": "19英寸桌面自助入住机，缎面白色外观配铝制点缀",
+    "alt_es": "Kiosko de auto check-in de escritorio de 19 pulgadas en acabado blanco satinado con acentos de aluminio",
+    "finish": "Satin White + Aluminum",
+    "model": "Desktop 19\"",
+    "category": "desktop"
+  },
+  "kiosk_desktop19_black.png": {
+    "alt_en": "Desktop 19-inch self-check-in kiosk in matte black finish with stainless steel accents",
+    "alt_zh": "19英寸桌面自助入住机，哑光黑色外观配不锈钢点缀",
+    "alt_es": "Kiosko de auto check-in de escritorio de 19 pulgadas en acabado negro mate con acentos de acero inoxidable",
+    "finish": "Matte Black + Stainless Steel",
+    "model": "Desktop 19\"",
+    "category": "desktop"
+  },
+  "kiosk_freestanding32_white.png": {
+    "alt_en": "Freestanding 32-inch lobby kiosk in satin white finish with aluminum accents",
+    "alt_zh": "32英寸独立大厅自助机，缎面白色外观配铝制点缀",
+    "alt_es": "Kiosko independiente de lobby de 32 pulgadas en acabado blanco satinado con acentos de aluminio",
+    "finish": "Satin White + Aluminum",
+    "model": "Freestanding 32\"",
+    "category": "freestanding"
+  },
+  "kiosk_freestanding32_black.png": {
+    "alt_en": "Freestanding 32-inch lobby kiosk in matte black finish with stainless steel accents",
+    "alt_zh": "32英寸独立大厅自助机，哑光黑色外观配不锈钢点缀",
+    "alt_es": "Kiosko independiente de lobby de 32 pulgadas en acabado negro mate con acentos de acero inoxidable",
+    "finish": "Matte Black + Stainless Steel",
+    "model": "Freestanding 32\"",
+    "category": "freestanding"
+  },
+  "kiosk_wall21_white.png": {
+    "alt_en": "Wall-mounted 21-inch kiosk in satin white finish with aluminum accents",
+    "alt_zh": "21英寸壁挂式自助机，缎面白色外观配铝制点缀",
+    "alt_es": "Kiosko de pared de 21 pulgadas en acabado blanco satinado con acentos de aluminio",
+    "finish": "Satin White + Aluminum",
+    "model": "Wall-Mounted 21\"",
+    "category": "wall-mounted"
+  },
+  "kiosk_wall21_black.png": {
+    "alt_en": "Wall-mounted 21-inch kiosk in matte black finish with stainless steel accents",
+    "alt_zh": "21英寸壁挂式自助机，哑光黑色外观配不锈钢点缀",
+    "alt_es": "Kiosko de pared de 21 pulgadas en acabado negro mate con acentos de acero inoxidable",
+    "finish": "Matte Black + Stainless Steel",
+    "model": "Wall-Mounted 21\"",
+    "category": "wall-mounted"
+  }
+}
+

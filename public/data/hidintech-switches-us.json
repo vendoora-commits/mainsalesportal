@@ -1,0 +1,98 @@
+{
+  "source": "HidinTech Smart Switch Supplier - US Catalog",
+  "region": "us",
+  "certifications": ["UL", "FCC", "ETL"],
+  "voltage": "110-120V",
+  "frequency": "60Hz",
+  "categories": [
+    {
+      "id": "smart-switches",
+      "name": "Smart Light Switches",
+      "description": "WiFi/Zigbee enabled switches with voice control compatibility",
+      "products": [
+        {
+          "id": "hs-us-1g-w",
+          "sku": "HIDIN-US-1G-WHT",
+          "name": "1-Gang Smart Switch (White)",
+          "gang": 1,
+          "color": "white",
+          "protocol": ["wifi", "zigbee"],
+          "voiceControl": ["alexa", "google", "siri"],
+          "features": ["timer", "schedule", "remote-control", "energy-monitor"],
+          "compatibility": ["ruckus-iot", "tuya", "smartthings"],
+          "price": 29.99,
+          "imageUrl": "/vendoora-assets/images_4k/switches/switch-1g-white-us.png"
+        },
+        {
+          "id": "hs-us-2g-w",
+          "sku": "HIDIN-US-2G-WHT",
+          "name": "2-Gang Smart Switch (White)",
+          "gang": 2,
+          "color": "white",
+          "protocol": ["wifi", "zigbee"],
+          "voiceControl": ["alexa", "google", "siri"],
+          "features": ["timer", "schedule", "remote-control", "energy-monitor"],
+          "compatibility": ["ruckus-iot", "tuya", "smartthings"],
+          "price": 39.99,
+          "imageUrl": "/vendoora-assets/images_4k/switches/switch-2g-white-us.png"
+        },
+        {
+          "id": "hs-us-3g-w",
+          "sku": "HIDIN-US-3G-WHT",
+          "name": "3-Gang Smart Switch (White)",
+          "gang": 3,
+          "color": "white",
+          "protocol": ["wifi", "zigbee"],
+          "voiceControl": ["alexa", "google", "siri"],
+          "features": ["timer", "schedule", "remote-control", "energy-monitor"],
+          "compatibility": ["ruckus-iot", "tuya", "smartthings"],
+          "price": 49.99,
+          "imageUrl": "/vendoora-assets/images_4k/switches/switch-3g-white-us.png"
+        }
+      ]
+    },
+    {
+      "id": "dimmers",
+      "name": "Smart Dimmers",
+      "description": "Smooth dimming control with preset scenes",
+      "products": [
+        {
+          "id": "hd-us-1g-w",
+          "sku": "HIDIN-US-DIM-1G-WHT",
+          "name": "1-Gang Smart Dimmer (White)",
+          "gang": 1,
+          "color": "white",
+          "protocol": ["wifi", "zigbee"],
+          "voiceControl": ["alexa", "google", "siri"],
+          "features": ["dimming", "timer", "schedule", "remote-control", "scenes"],
+          "compatibility": ["ruckus-iot", "tuya", "smartthings"],
+          "dimmingRange": "1-100%",
+          "price": 34.99,
+          "imageUrl": "/vendoora-assets/images_4k/switches/dimmer-1g-white-us.png"
+        }
+      ]
+    },
+    {
+      "id": "motion-sensors",
+      "name": "Motion Sensors",
+      "description": "PIR sensors for automated lighting and energy savings",
+      "products": [
+        {
+          "id": "hm-us-pir",
+          "sku": "HIDIN-US-PIR-WHT",
+          "name": "Smart Motion Sensor (White)",
+          "type": "pir",
+          "color": "white",
+          "protocol": ["wifi", "zigbee"],
+          "detectionRange": "8m",
+          "detectionAngle": "120°",
+          "features": ["occupancy-detection", "light-sensor", "adjustable-sensitivity"],
+          "compatibility": ["ruckus-iot", "tuya", "smartthings"],
+          "price": 24.99,
+          "imageUrl": "/vendoora-assets/images_4k/sensors/motion-sensor-white-us.png"
+        }
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,123 @@
+{
+  "source": "E-Star Kiosks - Tao 2025.6",
+  "region": "global",
+  "models": [
+    {
+      "id": "estar-desktop-19",
+      "sku": "ESTAR-TAO-DT19",
+      "name": "E-Star Desktop 19\" Self Check-in Kiosk",
+      "model": "Tao Desktop 19",
+      "category": "desktop",
+      "screenSize": "19 inch",
+      "touchscreen": true,
+      "os": ["windows", "android"],
+      "features": [
+        "id-scan",
+        "passport-scan",
+        "receipt-printer",
+        "key-dispenser",
+        "qr-printer",
+        "payment-terminal",
+        "camera",
+        "barcode-scanner"
+      ],
+      "compatibility": {
+        "locks": ["TAJ-L-series", "TAJ-KL-series"],
+        "pms": ["opera", "protel", "fidelio", "maestro"],
+        "api": "trinity-taj-hotel-api"
+      },
+      "finishes": ["white", "black"],
+      "dimensions": {
+        "width": "450mm",
+        "height": "400mm",
+        "depth": "180mm"
+      },
+      "weight": "8kg",
+      "power": "110-240V AC",
+      "price": 1299.99,
+      "images": {
+        "white": "/vendoora-assets/images_4k/kiosks/kiosk_desktop19_white.png",
+        "black": "/vendoora-assets/images_4k/kiosks/kiosk_desktop19_black.png"
+      },
+      "audienceTypes": ["hotel", "resort", "casino", "motel"]
+    },
+    {
+      "id": "estar-stand-32",
+      "sku": "ESTAR-TAO-ST32",
+      "name": "E-Star Freestanding 32\" Self Check-in Kiosk",
+      "model": "Tao Stand 32",
+      "category": "freestanding",
+      "screenSize": "32 inch",
+      "touchscreen": true,
+      "os": ["windows", "android"],
+      "features": [
+        "id-scan",
+        "passport-scan",
+        "receipt-printer",
+        "key-dispenser",
+        "qr-printer",
+        "payment-terminal",
+        "camera",
+        "barcode-scanner",
+        "emv-payment"
+      ],
+      "compatibility": {
+        "locks": ["TAJ-L-series", "TAJ-KL-series"],
+        "pms": ["opera", "protel", "fidelio", "maestro"],
+        "api": "trinity-taj-hotel-api"
+      },
+      "finishes": ["white", "black"],
+      "dimensions": {
+        "width": "500mm",
+        "height": "1650mm",
+        "depth": "400mm"
+      },
+      "weight": "45kg",
+      "power": "110-240V AC",
+      "price": 2599.99,
+      "images": {
+        "white": "/vendoora-assets/images_4k/kiosks/kiosk_stand32_white.png",
+        "black": "/vendoora-assets/images_4k/kiosks/kiosk_stand32_black.png"
+      },
+      "audienceTypes": ["hotel", "resort", "casino", "motel"]
+    },
+    {
+      "id": "estar-wall-21",
+      "sku": "ESTAR-TAO-WL21",
+      "name": "E-Star Wall-Mounted 21\" Self Check-in Kiosk",
+      "model": "Tao Wall 21",
+      "category": "wall-mounted",
+      "screenSize": "21 inch",
+      "touchscreen": true,
+      "os": ["android"],
+      "features": [
+        "id-scan",
+        "passport-scan",
+        "receipt-printer",
+        "qr-printer",
+        "camera",
+        "barcode-scanner"
+      ],
+      "compatibility": {
+        "locks": ["TAJ-L-series", "TAJ-KL-series"],
+        "pms": ["opera", "protel", "fidelio", "maestro"],
+        "api": "trinity-taj-hotel-api"
+      },
+      "finishes": ["white", "black"],
+      "dimensions": {
+        "width": "480mm",
+        "height": "650mm",
+        "depth": "100mm"
+      },
+      "weight": "12kg",
+      "power": "110-240V AC",
+      "price": 1899.99,
+      "images": {
+        "white": "/vendoora-assets/images_4k/kiosks/kiosk_wall21_white.png",
+        "black": "/vendoora-assets/images_4k/kiosks/kiosk_wall21_black.png"
+      },
+      "audienceTypes": ["hotel", "resort", "casino", "motel"]
+    }
+  ]
+}
+

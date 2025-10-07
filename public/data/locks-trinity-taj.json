@@ -1,0 +1,70 @@
+{
+  "source": "Trinity-TAJ Smart Lock 2025 / Trinity-TAJ Hotel Lock & API",
+  "families": [
+    {
+      "id": "TAJ-L-series",
+      "name": "TAJ L-Series Hotel Lock",
+      "audience": ["hotel","resort","casino","motel"],
+      "power": ["battery","wired"],
+      "auth": ["card","mobile","pin","fp"],
+      "features": ["mechanical-key-backup", "pms-ready", "offline-mode"],
+      "notes": "Slim hotel lock; mechanical key backup; PMS-ready",
+      "price": 250,
+      "image_silver": "/vendoora-assets/images_4k/locks/lock_slim_silver.png",
+      "image_black": "/vendoora-assets/images_4k/locks/lock_slim_black.png"
+    },
+    {
+      "id": "TAJ-KL-series",
+      "name": "TAJ KL-Series Camera Lock",
+      "audience": ["hotel","resort","casino","motel","timeshare","airbnb","vrbo"],
+      "power": ["battery"],
+      "auth": ["card","mobile","pin","fp","face"],
+      "features": ["camera","video-intercom", "face-recognition"],
+      "apps": ["TTLock","Tuya"],
+      "notes": "Advanced lock with camera; Face/FP recognition; App control via TTLock/Tuya; Video intercom",
+      "price": 450,
+      "image_silver": "/vendoora-assets/images_4k/locks/lock_kl_silver.png",
+      "image_black": "/vendoora-assets/images_4k/locks/lock_kl_black.png"
+    },
+    {
+      "id": "TAJ-S-series",
+      "name": "TAJ S-Series Slimline Lock",
+      "audience": ["airbnb","vrbo","timeshare","serviced-apartment"],
+      "power": ["battery"],
+      "auth": ["mobile","pin","card"],
+      "features": ["wallet-keys", "bluetooth-low-energy", "temporary-codes"],
+      "apps": ["TTLock","Tuya"],
+      "notes": "Serviced apartment / VRBO optimized; Mobile keys; Wallet pass support",
+      "price": 280,
+      "image_silver": "/vendoora-assets/images_4k/locks/lock_s_series_silver.png",
+      "image_black": "/vendoora-assets/images_4k/locks/lock_s_series_black.png"
+    }
+  ],
+  "compatibility": {
+    "kiosk_key_dispense": {
+      "compatible_locks": ["TAJ-L-series", "TAJ-KL-series"],
+      "requires": ["rfid-card-encoder"],
+      "notes": "Can encode and dispense RFID cards at check-in"
+    },
+    "kiosk_qr_printing": {
+      "compatible_locks": ["TAJ-KL-series", "TAJ-S-series"],
+      "requires": ["mobile-auth-enabled"],
+      "notes": "Can print QR codes or issue wallet passes for mobile access"
+    },
+    "kiosk_id_scan": {
+      "compatible_locks": ["TAJ-L-series", "TAJ-KL-series", "TAJ-S-series"],
+      "requires": ["verification-passed"],
+      "notes": "ID/Passport verification required before any credential issuance"
+    }
+  },
+  "property_type_recommendations": {
+    "hotel": ["TAJ-L-series", "TAJ-KL-series"],
+    "resort": ["TAJ-L-series", "TAJ-KL-series"],
+    "casino": ["TAJ-L-series", "TAJ-KL-series"],
+    "motel": ["TAJ-L-series"],
+    "airbnb": ["TAJ-S-series", "TAJ-KL-series"],
+    "vrbo": ["TAJ-S-series", "TAJ-KL-series"],
+    "timeshare": ["TAJ-KL-series", "TAJ-S-series"],
+    "vacation_rental": ["TAJ-S-series", "TAJ-KL-series"]
+  }
+}

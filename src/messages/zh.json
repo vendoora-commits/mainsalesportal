@@ -1,0 +1,37 @@
+{
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "save": "保存",
+    "cancel": "取消",
+    "next": "下一步",
+    "previous": "上一步",
+    "submit": "提交",
+    "close": "关闭"
+  },
+  "navigation": {
+    "home": "首页",
+    "setup": "设置",
+    "kiosk": "自助机选择",
+    "locks": "智能门锁",
+    "features": "房间功能",
+    "admin": "管理"
+  },
+  "home": {
+    "title": "用智能技术改造您的物业",
+    "subtitle": "无论您经营酒店、Airbnb、VRBO还是分时度假物业，都可以使用智能自助机、智能门锁和自动化功能定制您的住宿",
+    "startConfiguration": "开始配置",
+    "learnMore": "了解更多",
+    "completeSolutions": "智能物业完整解决方案",
+    "solutionsDescription": "您现代化酒店、Airbnb、VRBO或分时度假物业所需的一切"
+  },
+  "wizard": {
+    "propertySetup": "物业设置",
+    "kioskSelection": "自助机选择",
+    "lockConfiguration": "门锁配置",
+    "roomFeatures": "房间功能",
+    "summary": "摘要"
+  }
+}
+

@@ -1,0 +1,37 @@
+{
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "next": "Próximo",
+    "previous": "Anterior",
+    "submit": "Enviar",
+    "close": "Fechar"
+  },
+  "navigation": {
+    "home": "Início",
+    "setup": "Configuração",
+    "kiosk": "Seleção de Quiosque",
+    "locks": "Fechaduras Inteligentes",
+    "features": "Recursos do Quarto",
+    "admin": "Administração"
+  },
+  "home": {
+    "title": "Transforme Sua Propriedade com Tecnologia Inteligente",
+    "subtitle": "Seja você gerenciando um hotel, Airbnb, VRBO ou propriedade de tempo compartilhado, personalize sua acomodação com quiosques inteligentes, fechaduras conectadas e recursos automatizados",
+    "startConfiguration": "Iniciar Configuração",
+    "learnMore": "Saiba Mais",
+    "completeSolutions": "Soluções Completas para Propriedades Inteligentes",
+    "solutionsDescription": "Tudo o que você precisa para modernizar seu hotel, Airbnb, VRBO ou propriedade de tempo compartilhado"
+  },
+  "wizard": {
+    "propertySetup": "Configuração da Propriedade",
+    "kioskSelection": "Seleção de Quiosque",
+    "lockConfiguration": "Configuração de Fechaduras",
+    "roomFeatures": "Recursos do Quarto",
+    "summary": "Resumo"
+  }
+}
+

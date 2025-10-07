@@ -1,0 +1,37 @@
+{
+  "common": {
+    "loading": "جاري التحميل...",
+    "error": "خطأ",
+    "success": "نجاح",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "next": "التالي",
+    "previous": "السابق",
+    "submit": "إرسال",
+    "close": "إغلاق"
+  },
+  "navigation": {
+    "home": "الرئيسية",
+    "setup": "الإعداد",
+    "kiosk": "اختيار الكشك",
+    "locks": "الأقفال الذكية",
+    "features": "ميزات الغرفة",
+    "admin": "الإدارة"
+  },
+  "home": {
+    "title": "حوّل ممتلكاتك بالتكنولوجيا الذكية",
+    "subtitle": "سواء كنت تدير فندقًا أو Airbnb أو VRBO أو عقارًا مشتركًا، قم بتخصيص مكان الإقامة الخاص بك باستخدام أكشاك ذكية وأقفال ذكية وميزات آلية",
+    "startConfiguration": "بدء التكوين",
+    "learnMore": "معرفة المزيد",
+    "completeSolutions": "حلول كاملة للممتلكات الذكية",
+    "solutionsDescription": "كل ما تحتاجه لتحديث فندقك أو Airbnb أو VRBO أو عقارك المشترك"
+  },
+  "wizard": {
+    "propertySetup": "إعداد العقار",
+    "kioskSelection": "اختيار الكشك",
+    "lockConfiguration": "تكوين القفل",
+    "roomFeatures": "ميزات الغرفة",
+    "summary": "ملخص"
+  }
+}
+
