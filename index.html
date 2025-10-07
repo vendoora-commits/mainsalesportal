@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Hotel Configurator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 data-i18n="app.title">Smart Hotel Configurator</h1>
+            <div class="language-selector">
+                <select id="languageSelect" aria-label="Select Language">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="zh">中文</option>
+                </select>
+            </div>
+        </header>
+
+        <!-- Progress Indicator -->
+        <div class="progress-bar">
+            <div class="progress-step active" data-step="1">
+                <div class="step-number">1</div>
+                <div class="step-label" data-i18n="progress.property">Property Setup</div>
+            </div>
+            <div class="progress-step" data-step="2">
+                <div class="step-number">2</div>
+                <div class="step-label" data-i18n="progress.kiosk">Kiosk Selection</div>
+            </div>
+            <div class="progress-step" data-step="3">
+                <div class="step-number">3</div>
+                <div class="step-label" data-i18n="progress.locks">Smart Locks</div>
+            </div>
+            <div class="progress-step" data-step="4">
+                <div class="step-number">4</div>
+                <div class="step-label" data-i18n="progress.rooms">Smart Rooms</div>
+            </div>
+            <div class="progress-step" data-step="5">
+                <div class="step-number">5</div>
+                <div class="step-label" data-i18n="progress.review">Review</div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Step 1: Property Setup -->
+            <section class="step-content active" id="step1">
+                <h2 data-i18n="step1.title">Property Setup</h2>
+                <p class="step-description" data-i18n="step1.description">Tell us about your property to customize your smart hotel experience.</p>
+                
+                <div class="form-group">
+                    <label for="propertyName" data-i18n="step1.propertyName">Property Name</label>
+                    <input type="text" id="propertyName" name="propertyName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="numberOfRooms" data-i18n="step1.numberOfRooms">Number of Rooms</label>
+                    <input type="number" id="numberOfRooms" name="numberOfRooms" min="1" max="10000" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="propertyType" data-i18n="step1.propertyType">Property Type</label>
+                    <select id="propertyType" name="propertyType" required>
+                        <option value="">Select type...</option>
+                        <option value="hotel" data-i18n="step1.types.hotel">Hotel</option>
+                        <option value="resort" data-i18n="step1.types.resort">Resort</option>
+                        <option value="boutique" data-i18n="step1.types.boutique">Boutique Hotel</option>
+                        <option value="hostel" data-i18n="step1.types.hostel">Hostel</option>
+                        <option value="aparthotel" data-i18n="step1.types.aparthotel">Aparthotel</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n="step1.inspectionForm">Inspection Form Requirements</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="inspection" value="checkin">
+                            <span data-i18n="step1.inspection.checkin">Check-in inspection</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="inspection" value="checkout">
+                            <span data-i18n="step1.inspection.checkout">Check-out inspection</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="inspection" value="daily">
+                            <span data-i18n="step1.inspection.daily">Daily housekeeping inspection</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="inspection" value="maintenance">
+                            <span data-i18n="step1.inspection.maintenance">Maintenance inspection</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="floors" data-i18n="step1.floors">Number of Floors</label>
+                    <input type="number" id="floors" name="floors" min="1" max="200">
+                </div>
+            </section>
+
+            <!-- Step 2: Kiosk Selection -->
+            <section class="step-content" id="step2">
+                <h2 data-i18n="step2.title">Kiosk Selection</h2>
+                <p class="step-description" data-i18n="step2.description">Choose the kiosk features that best suit your property's needs.</p>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📷</div>
+                        <h3 data-i18n="step2.passportScanner.title">Passport Scanner</h3>
+                        <p data-i18n="step2.passportScanner.description">Automated guest identification and registration</p>
+                        <label class="toggle-switch">
+                            <input type="checkbox" name="kiosk" value="passport-scanner">
+                            <span class="slider"></span>
+                        </label>
+                        <div class="feature-options hidden">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="passport-features" value="ocr">
+                                <span data-i18n="step2.passportScanner.ocr">OCR data extraction</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="passport-features" value="biometric">
+                                <span data-i18n="step2.passportScanner.biometric">Biometric verification</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🖨️</div>
+                        <h3 data-i18n="step2.printer.title">Printer</h3>
+                        <p data-i18n="step2.printer.description">Print registration cards and receipts</p>
+                        <label class="toggle-switch">
+                            <input type="checkbox" name="kiosk" value="printer">
+                            <span class="slider"></span>
+                        </label>
+                        <div class="feature-options hidden">
+                            <select name="printer-type">
+                                <option value="thermal" data-i18n="step2.printer.thermal">Thermal</option>
+                                <option value="inkjet" data-i18n="step2.printer.inkjet">Inkjet</option>
+                                <option value="laser" data-i18n="step2.printer.laser">Laser</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🔑</div>
+                        <h3 data-i18n="step2.keyDispenser.title">Key Card Dispenser</h3>
+                        <p data-i18n="step2.keyDispenser.description">Automated key card encoding and dispensing</p>
+                        <label class="toggle-switch">
+                            <input type="checkbox" name="kiosk" value="key-dispenser">
+                            <span class="slider"></span>
+                        </label>
+                        <div class="feature-options hidden">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="key-features" value="rfid">
+                                <span data-i18n="step2.keyDispenser.rfid">RFID encoding</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="key-features" value="magnetic">
+                                <span data-i18n="step2.keyDispenser.magnetic">Magnetic stripe</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">💳</div>
+                        <h3 data-i18n="step2.payment.title">Payment Terminal</h3>
+                        <p data-i18n="step2.payment.description">Process guest payments at check-in</p>
+                        <label class="toggle-switch">
+                            <input type="checkbox" name="kiosk" value="payment">
+                            <span class="slider"></span>
+                        </label>
+                        <div class="feature-options hidden">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="payment-features" value="contactless">
+                                <span data-i18n="step2.payment.contactless">Contactless</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="payment-features" value="chip">
+                                <span data-i18n="step2.payment.chip">Chip & PIN</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 3: Smart Locks -->
+            <section class="step-content" id="step3">
+                <h2 data-i18n="step3.title">Smart Lock Configuration</h2>
+                <p class="step-description" data-i18n="step3.description">Configure your smart lock system for maximum security and convenience.</p>
+
+                <div class="form-group">
+                    <label data-i18n="step3.powerType">Power Type</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="lock-power" value="battery" checked>
+                            <span data-i18n="step3.power.battery">Battery Powered</span>
+                            <small data-i18n="step3.power.batteryDesc">Long-lasting batteries, wireless installation</small>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="lock-power" value="wired">
+                            <span data-i18n="step3.power.wired">Wired Power</span>
+                            <small data-i18n="step3.power.wiredDesc">Hardwired connection, no battery changes</small>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="lock-power" value="hybrid">
+                            <span data-i18n="step3.power.hybrid">Hybrid (Battery + Wired)</span>
+                            <small data-i18n="step3.power.hybridDesc">Best of both worlds with backup power</small>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n="step3.accessMethods">Access Methods</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="lock-access" value="keycard">
+                            <span data-i18n="step3.access.keycard">Key Card / RFID</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="lock-access" value="mobile">
+                            <span data-i18n="step3.access.mobile">Mobile App / Bluetooth</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="lock-access" value="fingerprint">
+                            <span data-i18n="step3.access.fingerprint">Fingerprint Scanner</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="lock-access" value="pin">
+                            <span data-i18n="step3.access.pin">PIN Code</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="lock-access" value="face">
+                            <span data-i18n="step3.access.face">Facial Recognition</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n="step3.securityFeatures">Security Features</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="lock-security" value="tamper">
+                            <span data-i18n="step3.security.tamper">Tamper Alert</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="lock-security" value="audit">
+                            <span data-i18n="step3.security.audit">Access Audit Trail</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="lock-security" value="remote">
+                            <span data-i18n="step3.security.remote">Remote Lock/Unlock</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="lock-security" value="auto">
+                            <span data-i18n="step3.security.auto">Auto-lock Function</span>
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 4: Smart Room Features -->
+            <section class="step-content" id="step4">
+                <h2 data-i18n="step4.title">Smart Room Features</h2>
+                <p class="step-description" data-i18n="step4.description">Create the perfect guest experience with intelligent room automation.</p>
+
+                <div class="room-feature-section">
+                    <h3 data-i18n="step4.lighting.title">Lighting Control</h3>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="room-lighting" value="smart-switches">
+                            <span data-i18n="step4.lighting.switches">Smart Light Switches</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="room-lighting" value="dimmer">
+                            <span data-i18n="step4.lighting.dimmer">Dimmable Lights</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="room-lighting" value="scenes">
+                            <span data-i18n="step4.lighting.scenes">Lighting Scenes (Relax, Work, Sleep)</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="room-lighting" value="motion">
+                            <span data-i18n="step4.lighting.motion">Motion-activated Lighting</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="room-feature-section">
+                    <h3 data-i18n="step4.sensors.title">Environmental Sensors</h3>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="room-sensors" value="motion">
+                            <span data-i18n="step4.sensors.motion">Motion Sensors</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="room-sensors" value="occupancy">
+                            <span data-i18n="step4.sensors.occupancy">Occupancy Detection</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="room-sensors" value="temperature">
+                            <span data-i18n="step4.sensors.temperature">Temperature Sensors</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="room-sensors" value="humidity">
+                            <span data-i18n="step4.sensors.humidity">Humidity Sensors</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="room-sensors" value="air-quality">
+                            <span data-i18n="step4.sensors.airQuality">Air Quality Monitoring</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="room-feature-section">
+                    <h3 data-i18n="step4.blinds.title">Window Treatments</h3>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="room-blinds" value="motorized">
+                            <span data-i18n="step4.blinds.motorized">Motorized Blinds/Curtains</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="room-blinds" value="scheduled">
+                            <span data-i18n="step4.blinds.scheduled">Scheduled Opening/Closing</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="room-blinds" value="light-sensing">
+                            <span data-i18n="step4.blinds.lightSensing">Light-sensing Auto-adjustment</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="room-feature-section">
+                    <h3 data-i18n="step4.climate.title">Climate Control</h3>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="room-climate" value="smart-thermostat">
+                            <span data-i18n="step4.climate.thermostat">Smart Thermostat</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="room-climate" value="zone-control">
+                            <span data-i18n="step4.climate.zoneControl">Multi-zone Temperature Control</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="room-climate" value="energy-saving">
+                            <span data-i18n="step4.climate.energySaving">Energy-saving Mode (vacant rooms)</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="room-climate" value="schedule">
+                            <span data-i18n="step4.climate.schedule">Temperature Scheduling</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="room-feature-section">
+                    <h3 data-i18n="step4.entertainment.title">Entertainment & Connectivity</h3>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="room-entertainment" value="smart-tv">
+                            <span data-i18n="step4.entertainment.smartTv">Smart TV Integration</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="room-entertainment" value="voice">
+                            <span data-i18n="step4.entertainment.voice">Voice Assistant</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="room-entertainment" value="casting">
+                            <span data-i18n="step4.entertainment.casting">Screen Casting</span>
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 5: Review & Summary -->
+            <section class="step-content" id="step5">
+                <h2 data-i18n="step5.title">Configuration Review</h2>
+                <p class="step-description" data-i18n="step5.description">Review your smart hotel configuration before finalizing.</p>
+                
+                <div id="configurationSummary" class="summary-container">
+                    <!-- Dynamic summary will be generated here -->
+                </div>
+
+                <div class="export-options">
+                    <button type="button" class="btn btn-secondary" id="exportJson" data-i18n="step5.exportJson">
+                        Export as JSON
+                    </button>
+                    <button type="button" class="btn btn-secondary" id="printConfig" data-i18n="step5.print">
+                        Print Configuration
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons">
+            <button type="button" class="btn btn-secondary" id="prevBtn" disabled>
+                <span data-i18n="nav.previous">Previous</span>
+            </button>
+            <button type="button" class="btn btn-primary" id="nextBtn">
+                <span data-i18n="nav.next">Next</span>
+            </button>
+            <button type="button" class="btn btn-success hidden" id="finishBtn">
+                <span data-i18n="nav.finish">Finish Configuration</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
