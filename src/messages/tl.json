@@ -1,0 +1,37 @@
+{
+  "common": {
+    "loading": "Naglo-load...",
+    "error": "Error",
+    "success": "Tagumpay",
+    "save": "I-save",
+    "cancel": "Kanselahin",
+    "next": "Susunod",
+    "previous": "Nakaraan",
+    "submit": "Isumite",
+    "close": "Isara"
+  },
+  "navigation": {
+    "home": "Home",
+    "setup": "Setup",
+    "kiosk": "Pagpili ng Kiosk",
+    "locks": "Smart Locks",
+    "features": "Mga Feature ng Kwarto",
+    "admin": "Admin"
+  },
+  "home": {
+    "title": "Baguhin ang Iyong Ari-arian gamit ang Smart Technology",
+    "subtitle": "Maging hotel, Airbnb, VRBO o timeshare, i-customize ang iyong tuluyan gamit ang smart kiosks, smart locks, at automated features",
+    "startConfiguration": "Simulan ang Configuration",
+    "learnMore": "Matuto Pa",
+    "completeSolutions": "Kumpletong Solusyon para sa Smart Properties",
+    "solutionsDescription": "Lahat ng kailangan mo para modernisahin ang iyong hotel, Airbnb, VRBO o timeshare"
+  },
+  "wizard": {
+    "propertySetup": "Property Setup",
+    "kioskSelection": "Pagpili ng Kiosk",
+    "lockConfiguration": "Konfigurasyonng Lock",
+    "roomFeatures": "Mga Feature ng Kwarto",
+    "summary": "Buod"
+  }
+}
+

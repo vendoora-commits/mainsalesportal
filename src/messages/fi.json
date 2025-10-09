@@ -1,0 +1,37 @@
+{
+  "common": {
+    "loading": "Ladataan...",
+    "error": "Virhe",
+    "success": "Onnistui",
+    "save": "Tallenna",
+    "cancel": "Peruuta",
+    "next": "Seuraava",
+    "previous": "Edellinen",
+    "submit": "Lähetä",
+    "close": "Sulje"
+  },
+  "navigation": {
+    "home": "Etusivu",
+    "setup": "Asetukset",
+    "kiosk": "Kioskin Valinta",
+    "locks": "Älylukot",
+    "features": "Huoneen Ominaisuudet",
+    "admin": "Hallinta"
+  },
+  "home": {
+    "title": "Muuta Kiinteistösi Älytekniikalla",
+    "subtitle": "Olipa kyseessä hotelli, Airbnb, VRBO tai aikaosuus, mukauta majoitustasi älykkäillä kioskeilla, älylukolla ja automaattisilla ominaisuuksilla",
+    "startConfiguration": "Aloita Konfigurointi",
+    "learnMore": "Lue Lisää",
+    "completeSolutions": "Täydelliset Ratkaisut Älykiinteistöille",
+    "solutionsDescription": "Kaikki mitä tarvitset hotellisi, Airbnb:si, VRBO:si tai aikaosuutesi modernisointiin"
+  },
+  "wizard": {
+    "propertySetup": "Kiinteistön Asetukset",
+    "kioskSelection": "Kioskin Valinta",
+    "lockConfiguration": "Lukon Konfigurointi",
+    "roomFeatures": "Huoneen Ominaisuudet",
+    "summary": "Yhteenveto"
+  }
+}
+

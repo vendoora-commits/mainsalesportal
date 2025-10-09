@@ -1,0 +1,37 @@
+{
+  "common": {
+    "loading": "Laden...",
+    "error": "Fout",
+    "success": "Succes",
+    "save": "Opslaan",
+    "cancel": "Annuleren",
+    "next": "Volgende",
+    "previous": "Vorige",
+    "submit": "Indienen",
+    "close": "Sluiten"
+  },
+  "navigation": {
+    "home": "Home",
+    "setup": "Instellingen",
+    "kiosk": "Kiosk Selectie",
+    "locks": "Slimme Sloten",
+    "features": "Kamer Functies",
+    "admin": "Beheer"
+  },
+  "home": {
+    "title": "Transformeer Uw Accommodatie met Slimme Technologie",
+    "subtitle": "Of u nu een hotel, Airbnb, VRBO of timeshare runt, pas uw accommodatie aan met slimme kiosken, slimme sloten en geautomatiseerde functies",
+    "startConfiguration": "Start Configuratie",
+    "learnMore": "Meer Informatie",
+    "completeSolutions": "Volledige Oplossingen voor Slimme Accommodaties",
+    "solutionsDescription": "Alles wat u nodig heeft om uw hotel, Airbnb, VRBO of timeshare te moderniseren"
+  },
+  "wizard": {
+    "propertySetup": "Accommodatie Instellingen",
+    "kioskSelection": "Kiosk Selectie",
+    "lockConfiguration": "Slot Configuratie",
+    "roomFeatures": "Kamer Functies",
+    "summary": "Samenvatting"
+  }
+}
+

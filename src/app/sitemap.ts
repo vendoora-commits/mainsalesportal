@@ -1,7 +1,8 @@
 import { MetadataRoute } from 'next';
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://vendoora.com';
-const locales = ['en-US', 'zh-CN', 'es-419', 'pt-BR', 'de-DE', 'fr-FR', 'ar'];
+// 11 locales as per final spec (locked)
+const locales = ['en', 'es', 'pt', 'fi', 'tl', 'ur', 'pl', 'de', 'nl', 'ar', 'fr'];
 
 const routes = [
   '',

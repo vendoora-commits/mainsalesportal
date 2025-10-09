@@ -4,7 +4,7 @@
  * Updated to match specification: us, eu, latam, afr, gcc, apac
  */
 
-export type Region = 'us' | 'eu' | 'latam' | 'afr' | 'gcc' | 'apac' | 'global';
+export type Region = 'us' | 'eu' | 'latam' | 'afr' | 'gcc' | 'apac' | 'pk' | 'global';
 
 export interface RegionConfig {
   id: Region;
@@ -99,6 +99,19 @@ export const REGIONS: Record<Region, RegionConfig> = {
     dateFormat: 'DD/MM/YYYY',
     timezone: 'Asia/Dubai',
   },
+  pk: {
+    id: 'pk',
+    name: 'Pakistan',
+    languages: ['ur', 'en'],
+    defaultLanguage: 'ur',
+    currency: 'PKR',
+    currencySymbol: '₨',
+    voltage: '220-240V',
+    frequency: '50Hz',
+    certifications: ['CE', 'SASO'], // Accept CE while PK-specific certs are added
+    dateFormat: 'DD/MM/YYYY',
+    timezone: 'Asia/Karachi',
+  },
   global: {
     id: 'global',
     name: 'Global',
@@ -149,11 +162,14 @@ const countryToMarket: Record<string, Region> = {
   // GCC (Gulf Cooperation Council)
   'AE': 'gcc', 'SA': 'gcc', 'QA': 'gcc', 'KW': 'gcc', 'OM': 'gcc', 'BH': 'gcc',
   
+  // Pakistan (separate market as per final spec)
+  'PK': 'pk',
+  
   // Asia Pacific
   'CN': 'apac', 'JP': 'apac', 'KR': 'apac', 'SG': 'apac', 'AU': 'apac',
   'NZ': 'apac', 'TH': 'apac', 'MY': 'apac', 'PH': 'apac', 'ID': 'apac',
   'IN': 'apac', 'VN': 'apac', 'HK': 'apac', 'TW': 'apac', 'BD': 'apac',
-  'PK': 'apac', 'LK': 'apac',
+  'LK': 'apac',
 };
 
 /**

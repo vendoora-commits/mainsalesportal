@@ -1,0 +1,37 @@
+{
+  "common": {
+    "loading": "Ładowanie...",
+    "error": "Błąd",
+    "success": "Sukces",
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "next": "Dalej",
+    "previous": "Wstecz",
+    "submit": "Wyślij",
+    "close": "Zamknij"
+  },
+  "navigation": {
+    "home": "Strona Główna",
+    "setup": "Konfiguracja",
+    "kiosk": "Wybór Kiosku",
+    "locks": "Inteligentne Zamki",
+    "features": "Funkcje Pokoju",
+    "admin": "Administrator"
+  },
+  "home": {
+    "title": "Przekształć Swoją Nieruchomość dzięki Inteligentnej Technologii",
+    "subtitle": "Bez względu na to, czy prowadzisz hotel, Airbnb, VRBO czy timeshare, dostosuj swoje zakwaterowanie za pomocą inteligentnych kiosków, inteligentnych zamków i automatycznych funkcji",
+    "startConfiguration": "Rozpocznij Konfigurację",
+    "learnMore": "Dowiedz Się Więcej",
+    "completeSolutions": "Kompletne Rozwiązania dla Inteligentnych Nieruchomości",
+    "solutionsDescription": "Wszystko, czego potrzebujesz, aby zmodernizować swój hotel, Airbnb, VRBO lub timeshare"
+  },
+  "wizard": {
+    "propertySetup": "Konfiguracja Nieruchomości",
+    "kioskSelection": "Wybór Kiosku",
+    "lockConfiguration": "Konfiguracja Zamka",
+    "roomFeatures": "Funkcje Pokoju",
+    "summary": "Podsumowanie"
+  }
+}
+

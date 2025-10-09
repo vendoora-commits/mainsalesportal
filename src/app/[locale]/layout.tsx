@@ -7,7 +7,8 @@ import '../globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
-const locales = ['en-US', 'zh-CN', 'es-419', 'pt-BR', 'de-DE', 'fr-FR', 'ar'];
+const locales = ['en', 'es', 'pt', 'fi', 'tl', 'ur', 'pl', 'de', 'nl', 'ar', 'fr'];
+const rtlLocales = ['ar', 'ur'];
 
 // Generate metadata with hreflang support
 export async function generateMetadata({
@@ -18,11 +19,14 @@ export async function generateMetadata({
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://vendoora.com';
   const { locale } = params;
 
-  // Generate alternate language links (hreflang)
-  const languages: Record<string, string> = {};
-  locales.forEach((loc) => {
-    languages[loc] = `${baseUrl}/${loc}`;
-  });
+      // Generate alternate language links (hreflang) for all 11 locales
+      const languages: Record<string, string> = {};
+      locales.forEach((loc) => {
+        languages[loc] = `${baseUrl}/${loc}`;
+      });
+      
+      // Add x-default for English
+      languages['x-default'] = `${baseUrl}/en`;
 
   return {
     title: 'Vendoora - Smart Hotel Experience Platform',
@@ -99,9 +103,10 @@ export default function LocaleLayout({
   params: { locale: string };
 }) {
   const { locale } = params;
+  const isRTL = rtlLocales.includes(locale as typeof rtlLocales[number]);
 
   return (
-    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} suppressHydrationWarning>
+    <html lang={locale} dir={isRTL ? 'rtl' : 'ltr'} suppressHydrationWarning>
       <head>
         {/* Custom CSS */}
         <link rel="stylesheet" href="/vendoora-assets/css/ui-buttons.css" />

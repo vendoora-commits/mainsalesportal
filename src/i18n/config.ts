@@ -3,33 +3,45 @@
  * Matches specification requirements for route-based locales and market mapping
  */
 
-export const locales = ['en-US', 'zh-CN', 'es-419', 'pt-BR', 'de-DE', 'fr-FR', 'ar'] as const;
+// 11 locales as per final spec (locked)
+export const locales = ['en', 'es', 'pt', 'fi', 'tl', 'ur', 'pl', 'de', 'nl', 'ar', 'fr'] as const;
 export type Locale = (typeof locales)[number];
 
-export const defaultLocale: Locale = 'en-US';
+export const defaultLocale: Locale = 'en';
+
+// RTL languages (locked requirement)
+export const rtlLocales: Locale[] = ['ar', 'ur'];
 
 export const localeNames: Record<Locale, string> = {
-  'en-US': 'English (US)',
-  'zh-CN': '中文 (简体)',
-  'es-419': 'Español (América Latina)',
-  'pt-BR': 'Português (Brasil)',
-  'de-DE': 'Deutsch',
-  'fr-FR': 'Français',
+  'en': 'English',
+  'es': 'Español',
+  'pt': 'Português',
+  'fi': 'Suomi',
+  'tl': 'Filipino',
+  'ur': 'اردو',
+  'pl': 'Polski',
+  'de': 'Deutsch',
+  'nl': 'Nederlands',
   'ar': 'العربية',
+  'fr': 'Français',
 };
 
 export const localeFlags: Record<Locale, string> = {
-  'en-US': '🇺🇸',
-  'zh-CN': '🇨🇳',
-  'es-419': '🌎',
-  'pt-BR': '🇧🇷',
-  'de-DE': '🇩🇪',
-  'fr-FR': '🇫🇷',
+  'en': '🇬🇧',
+  'es': '🇪🇸',
+  'pt': '🇵🇹',
+  'fi': '🇫🇮',
+  'tl': '🇵🇭',
+  'ur': '🇵🇰',
+  'pl': '🇵🇱',
+  'de': '🇩🇪',
+  'nl': '🇳🇱',
   'ar': '🇸🇦',
+  'fr': '🇫🇷',
 };
 
-// Market mapping as per specification
-export const markets = ['us', 'eu', 'latam', 'afr', 'gcc', 'apac'] as const;
+// Markets as per final spec (locked) - Added Pakistan (pk)
+export const markets = ['us', 'eu', 'latam', 'afr', 'apac', 'gcc', 'pk', 'global'] as const;
 export type Market = (typeof markets)[number];
 
 export const marketNames: Record<Market, string> = {
@@ -39,17 +51,23 @@ export const marketNames: Record<Market, string> = {
   afr: 'Africa',
   gcc: 'Gulf Cooperation Council',
   apac: 'Asia Pacific',
+  pk: 'Pakistan',
+  global: 'Global',
 };
 
-// Locale → Market mapping (as per spec)
+// Locale → Market mapping (as per final spec)
 export const localeToMarket: Record<Locale, Market> = {
-  'en-US': 'us',
-  'zh-CN': 'apac',
-  'es-419': 'latam',
-  'pt-BR': 'latam',
-  'de-DE': 'eu',
-  'fr-FR': 'eu',
+  'en': 'us',
+  'es': 'latam',
+  'pt': 'latam',
+  'fi': 'eu',
+  'tl': 'apac',
+  'ur': 'pk',
+  'pl': 'eu',
+  'de': 'eu',
+  'nl': 'eu',
   'ar': 'gcc',
+  'fr': 'eu',
 };
 
 // Country → Market mapping (as per spec)
